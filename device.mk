@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 Hallo Welt Systeme UG
+# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 #
 
 # Vendor blobs
-$(call inherit-product-if-exists, vendor/volla/yggdrasilx/yggdrasilx-vendor.mk)
+$(call inherit-product-if-exists, vendor/volla/yggdrasilx-unified/yggdrasilx-unified-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -30,9 +30,6 @@ TARGET_SCREEN_WIDTH := 720
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
 
 # Inherit from volla mt6763-common
 $(call inherit-product, device/volla/mt6763-common/common.mk)

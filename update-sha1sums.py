@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2021 Hallo Welt Systeme UG
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import os
 import sys
 from hashlib import sha1
 
-DEVICE = 'yggdrasilx'
+DEVICE = 'yggdrasilx-unified'
 VENDOR = 'volla'
 VENDOR_PATH = os.path.join(
     *['..', '..', '..', 'vendor', VENDOR, DEVICE, 'proprietary'])

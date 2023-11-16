@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 Hallo Welt Systeme UG
+# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,11 +24,11 @@ TARGET_OTA_ASSERT_DEVICE := yggdrasilx,k63v2_64_bsp
 TARGET_SCREEN_DENSITY := 320
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/volla/yggdrasilx
+TARGET_KERNEL_SOURCE := kernel/volla/gx290
 TARGET_KERNEL_CONFIG := gx290_defconfig
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # inherit from the proprietary version
--include vendor/volla/yggdrasilx/BoardConfigVendor.mk
+-include vendor/volla/yggdrasilx-unified/BoardConfigVendor.mk
